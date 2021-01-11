@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setSetMessage] = useState("");
   // const [ErrorMessage, setErrorMessage] = useState("");
-  const PORT = process.env.PORT
+  const PORT = process.env.API_PORT
 
   const handleSubmit = (e) => {
     e.preventDefault();
