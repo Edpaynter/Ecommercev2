@@ -2,7 +2,7 @@ var express = require("express");
 var mongoose = require("mongoose");
 const helmet = require('helmet');
 const path = require('path');
-const routes = require("./routes/config");
+// const routes = require("./routes/config");
 // mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PW}@cluster0-shard-00-00.tqmtz.mongodb.net:27017,cluster0-shard-00-01.tqmtz.mongodb.net:27017,cluster0-shard-00-02.tqmtz.mongodb.net:27017/${process.env.DB_NAME}?ssl=true&replicaSet=atlas-nmsert-shard-0&authSource=admin&retryWrites=true&w=majority`,
 // { useNewUrlParser: true, useFindAndModify: false},  function (err) {
 //     if(err) {
@@ -20,6 +20,6 @@ app.get('/', function (req, res) {
 });
 
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 1234);
 
 console.log("listening on port")
