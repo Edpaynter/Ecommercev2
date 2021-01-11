@@ -5,6 +5,8 @@ const express = require('express'),
   mongoose = require('mongoose'),
   ContactForm = require('./services/contactForm/model/ContactForm'), //created model loading here
   bodyParser = require('body-parser');
+const cors = require('cors')
+
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -18,6 +20,7 @@ mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PW}@cluster0
 }); 
 
 
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
