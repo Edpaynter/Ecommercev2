@@ -20,6 +20,6 @@ app.get('/', function (req, res) {
 });
 
 
-app.listen(process.env.PORT || 1234);
+app.listen(process.env.PORT || 8080);
 
 console.log("listening on port")
