@@ -6,8 +6,13 @@ const express = require('express'),
   ContactForm = require('./services/contactForm/model/ContactForm'), //created model loading here
   bodyParser = require('body-parser');
 const cors = require('cors')
-
-
+const cookieParser = require('cookie-parser');
+// const morgan = require('morgan');
+// const path = require('path');
+// const cors = require('cors');
+const helmet = require('helmet');
+// const config = require('./config/key');
+const routes = require('./services/contactForm/routes/contactFormRoutes'); //importing route
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PW}@cluster0-shard-00-00.tqmtz.mongodb.net:27017,cluster0-shard-00-01.tqmtz.mongodb.net:27017,cluster0-shard-00-02.tqmtz.mongodb.net:27017/${process.env.DB_NAME}?ssl=true&replicaSet=atlas-nmsert-shard-0&authSource=admin&retryWrites=true&w=majority`,
@@ -20,12 +25,15 @@ mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PW}@cluster0
 }); 
 
 
-app.use(cors())
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(helmet())
+// app.use(morgan('dev'));
+app.use(cors());
 
 
-const routes = require('./services/contactForm/routes/contactFormRoutes'); //importing route
 routes(app); //register the route
 
 
