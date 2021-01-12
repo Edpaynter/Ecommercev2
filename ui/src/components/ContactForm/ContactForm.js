@@ -20,9 +20,11 @@ const ContactForm = () => {
     fetch(`http://localhost:${PORT}/contactform`, requestOptions)
       .then((response) => response.json())
       .then(data =>  alert(`Thanks for your Submission ${name} `))
-    setName('')
-    setSubject('')
-    setEmail('')
+      .then(data =>  setName(''),
+      setSubject(''),
+      setEmail(''),
+      setSetMessage(''))
+   
 
     
   };
@@ -96,6 +98,7 @@ const ContactForm = () => {
           type="submit"
           name="submit"
           value="Send Message"
+          // onClick={handleSubmit}
         />
       </form>
     </div>
