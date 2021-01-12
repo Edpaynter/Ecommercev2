@@ -10,7 +10,7 @@ const ContactForm = () => {
   const PORT = 8080
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
    
     const requestOptions = {
       method: "POST",
