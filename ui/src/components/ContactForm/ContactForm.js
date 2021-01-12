@@ -48,8 +48,8 @@ const ContactForm = () => {
       <div className="post-heading-left">
         <h2>Leave Us a Message</h2>
         <p>
-          Let us know how you feel about whate we are doing. All feedback is
-          welcomed we encourage it.
+          Let us know how we are doing. All feedback is
+          welcome, we encourage it.
         </p>
       </div>
 
