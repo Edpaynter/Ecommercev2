@@ -10,8 +10,8 @@ const ContactForm = () => {
   const PORT = 8080
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Submitting Name ${name} `);
+    // e.preventDefault();
+   
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -19,7 +19,7 @@ const ContactForm = () => {
     };
     fetch(`http://localhost:${PORT}/contactform`, requestOptions)
       .then((response) => response.json())
-      .then(data => console.log(data))
+      .then(data =>  alert(`Thanks for your Submission ${name} `))
     setName('')
     setSubject('')
     setEmail('')
