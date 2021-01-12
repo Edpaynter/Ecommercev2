@@ -96,7 +96,6 @@ const ContactForm = () => {
           type="submit"
           name="submit"
           value="Send Message"
-          onClick={handleSubmit}
         />
       </form>
     </div>
