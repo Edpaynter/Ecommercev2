@@ -1,5 +1,5 @@
 {
-  "name": "todolistapi",
+  "name": "RESTful Api",
   "version": "1.0.0",
   "description": "RESTful toDoList Api",
   "main": "index.js",
