@@ -44,7 +44,8 @@ mongoose
   })
   .then(result => {
     const port = process.env.PORT || 8080;
-   //app.use(express.static(__dirname + '/front-end/build/'))
+   app.use(express.static(__dirname + 'front-end/build'))
+   app.use('/contact', express.static(path.join(__dirname, 'front-end/build')));
    app.use('/', express.static(path.join(__dirname, 'front-end/build')));
     app.listen(port, () => {
       console.log(`Listening on port ${port}...`);

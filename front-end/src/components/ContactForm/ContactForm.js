@@ -18,7 +18,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: name, subject: subject, email: email, message: message })
     };
-    fetch(`${process.env.REACT_APP_FETCH_URL}/contactform`, requestOptions)
+    fetch(`${process.env.REACT_APP_FETCH_URL}contactform`, requestOptions)
       .then((response) => response.json())
       .then(data =>  alert(`Thanks for your Submission ${name} `))
       .then(data =>  setName(''),
