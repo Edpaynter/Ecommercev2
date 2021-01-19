@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require("path");
 const { MONGODB_URI } = require("./config");
 const userRoutes = require("./routes/user");
 const contactFormRoutes = require("./routes/contactFormRoutes");
@@ -21,7 +22,6 @@ app.use((req, res, next) => {
 
 // Register Route
 app.use(contactFormRoutes);
-
 // app.use((req, res, next) => {
 //   // Handles React router--for combined app production
 //   res.sendFile(path.resolve(__dirname, "public", "index.html"));
@@ -44,6 +44,8 @@ mongoose
   })
   .then(result => {
     const port = process.env.PORT || 8080;
+   //app.use(express.static(__dirname + '/front-end/build/'))
+   app.use('/', express.static(path.join(__dirname, 'front-end/build')));
     app.listen(port, () => {
       console.log(`Listening on port ${port}...`);
     });
