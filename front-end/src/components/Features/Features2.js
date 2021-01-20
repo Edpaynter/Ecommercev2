@@ -1,6 +1,12 @@
 import React from "react";
-
+import workwithUs from '../../assets/images/company/whyus.JPG'
 const Features2 = () => {
+    const divStyle = {
+        maxWidth: '300px',
+      };
+    const parStyle = {
+        textAlign: 'center'
+    }
   return (
     <div id="features3" className="wrap-container80">
         
@@ -19,6 +25,7 @@ const Features2 = () => {
                     	<span className="feature-text-number"></span>
                         <h4>What We Need to Work</h4>
                         <p>You can come to us with a thought and we can start there, we have the necessary tools to take what's in your mind and get it into the physcial world. If you have an example we can go based off that anything is possible with us, lets get to work.</p>
+                        <p style={parStyle}><img style={divStyle} src={workwithUs}></img> </p>
                     </div>
                 </div>
                 

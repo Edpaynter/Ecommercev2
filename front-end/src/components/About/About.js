@@ -1,5 +1,5 @@
 import React from "react";
-
+import aboutimg from '../../assets/images/company/aboutimg.JPG'
 const About = () => {
   return (
     <div id="about" className="wrap-container8060">
@@ -15,8 +15,8 @@ const About = () => {
           <div className="col-md-6 col-lg-5">
             <figure className="padding-top30-md margin-bottom20">
               <img
-                src="assets/images/company/aboutimg.jpg"
-                alt=""
+                src={aboutimg}
+                alt="AllSides Desigsn - About Image"
                 className="img-style-left"
               />
             </figure>

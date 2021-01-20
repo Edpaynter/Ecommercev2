@@ -21,9 +21,9 @@ exports.create_a_form = (req, res) => {
     transporter.sendMail({
       from: `${form.email} AllSides Email Delivery Service`, // sender address
       to: `${process.env.COMPANY_EMAIL}`, // list of receivers
-      subject: `${form.subject} has reached out for more information`, // Subject line
+      subject: `${form.name} has reached out for more information`, // Subject line
       text: `${form.message}`, // plain text body
-      html: `<h3>Contact Email: ${form.email}</h3><br><h4>Message:</h4><br>${form.message}`, // html body
+      html: `<h3>Contact Email: ${form.email}</h3><br><h4>Name:${form.name}<h4>Message:</h4>${form.message}`, // html body
     });
   })
 };
