@@ -18,6 +18,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: name, subject: subject, email: email, message: message })
     };
+    //change to api/ when in prod
     fetch(`/contactform`, requestOptions)
       .then((response) => response.json())
       .then(data =>  alert(`Thanks for your Submission ${name} `))
