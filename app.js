@@ -44,9 +44,9 @@ mongoose
   })
   .then((result) => {
     const port = process.env.PORT || 8080;
-    app.use(express.static(path.join(__dirname, './front-end/build')))
+    app.use(express.static(path.join(__dirname, 'front-end/build')))
     app.get('/*', function(req, res) {
-      res.sendFile(path.join(__dirname, './front-end/build'), function(err) {
+      res.sendFile(path.join(__dirname, 'front-end/build'), function(err) {
         if (err) {
           res.status(500).send(err)
         }
