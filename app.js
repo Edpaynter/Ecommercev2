@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
@@ -40,18 +40,19 @@ mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false,
   })
-  .then(result => {
+  .then((result) => {
     const port = process.env.PORT || 8080;
-   app.use(express.static(__dirname + 'front-end/build'))
-   app.use('/contact', express.static(path.join(__dirname, 'front-end/build')));
-   app.use('/', express.static(path.join(__dirname, 'front-end/build')));
+    app.use(express.static(path.join(__dirname, "front-end/public")));
+    //  app.use(express.static(__dirname + 'front-end/build'))
+    //  app.use('/contact', express.static(path.join(__dirname, 'front-end/build')));
+    //  app.use('/', express.static(path.join(__dirname, 'front-end/build')));
     app.listen(port, () => {
       console.log(`Listening on port ${port}...`);
     });
   })
-  .catch(err => {
+  .catch((err) => {
     // Handle error
-    console.log(err)
+    console.log(err);
   });
