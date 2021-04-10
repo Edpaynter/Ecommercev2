@@ -13,6 +13,8 @@ import Quote from "./components/Quote/Quote";
 // import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+// import AppointmentScheduler from "./components/AppointmentScheduler/AppointmentScheduler"
+// import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         </Route>
         <Route path="/">
           <Header />
+          {/* <MuiThemeProvider>
+          <AppointmentScheduler />
+          </MuiThemeProvider> */}
           <About />
           <Features />
           <Quote />
@@ -36,6 +41,7 @@ function App() {
           {/* <TeamTiles /> */}
           {/* <Partners /> */}
           <Footer />
+         
         </Route>
       </Switch>
     </Router>

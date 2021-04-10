@@ -23,8 +23,7 @@ const Features = () => {
               <img src="assets/images/content/icon/experience.png" alt="Icon" />
               <h4>2 years experience</h4>
               <p>
-                Our Team is eager and ready to get to work, we have all the tools you need and the drive to get it done. We work deligently to get your products back and complete you AllSides experience.
-              </p>
+              Our Team is eager and ready to get to work. We have all the tools you need and the drive to get it done. We work diligently to get your products back and complete your AllSides experience.              </p>
             </div>
           </div>
 
@@ -33,8 +32,7 @@ const Features = () => {
               <img src="assets/images/content/icon/cup.png" alt="Icon" />
               <h4>10 people in team</h4>
               <p>
-                Our Team is big enough to handle any of your needs, and our skillset is wide. Anything you throw at us we can get it back to you and bring your idea to life.
-              </p>
+              Our Team is big enough to handle all of your needs, and our skillset is broad. Anything you throw at us we can get it back to you and bring your idea to life.              </p>
             </div>
           </div>
         </div>

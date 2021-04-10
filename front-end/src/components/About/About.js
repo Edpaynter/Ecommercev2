@@ -1,6 +1,10 @@
 import React from "react";
 import aboutimg from '../../assets/images/company/aboutimg.JPG'
+import useStyles from "./styles";
+
 const About = () => {
+  const classes = useStyles();
+
   return (
     <div id="about" className="wrap-container8060">
       <div className="container">
@@ -21,11 +25,11 @@ const About = () => {
               />
             </figure>
           </div>
-          <div className="col-md-6 col-lg-offset-1">
-            <div className="margin-bottom20 margin-top30">
+          <div className={`col-md-6 col-lg-offset-1`}>
+            <div className="margin-bottom20">
               <p>
                 <a
-                  
+                  className={classes.companyHighlight}
                   href="http://allsidesdesigns.co"
                   rel="noreferrer"
                   target="_blank"
@@ -33,11 +37,7 @@ const About = () => {
                   Allsides Designs
                 </a>
                 is a branding company that works with you to
-                design, and create products to boost your brand. It could be the
-                need of an online presence, or it maybe you have something you
-                want bring to life in a 3D model, we can work with you to make
-                it happen. We even could capture all the footage for you,
-                whatever you need we have you covered on AllSides
+                design, and create products to boost your brand. You could need an online presence, or if you have something you want to bring to life in a 3D model, we can work with you to make it happen. We can even capture video footage for you; whatever you need, we have you covered on AllSides.
               </p>
               {/* <p>
                 <strong>Sed ut perspiciatis</strong> unde omnis iste natus error

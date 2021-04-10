@@ -2,7 +2,7 @@ import React from "react";
 import workwithUs from '../../assets/images/company/whyus.JPG'
 const Features2 = () => {
     const divStyle = {
-        maxWidth: '300px',
+        maxWidth: '400px',
       };
     const parStyle = {
         textAlign: 'center'
@@ -23,9 +23,9 @@ const Features2 = () => {
                 <div className="col-sm-6"> 
                 	<div className="affa-feature-text">
                     	<span className="feature-text-number"></span>
-                        <h4>What We Need to Work</h4>
-                        <p>You can come to us with a thought and we can start there, we have the necessary tools to take what's in your mind and get it into the physcial world. If you have an example we can go based off that anything is possible with us, lets get to work.</p>
-                        <p style={parStyle}><img style={divStyle} src={workwithUs}></img> </p>
+                        <h4>What We Need to Get Started</h4>
+                        <p>You can come to us with a thought, and we can start there.  We have the necessary tools to take what's in your mind and get it into the physical world. If you have an example, we can go based on that anything is possible with us, let's get to work.</p>
+                        <p style={parStyle}><img style={divStyle} className="img-style-left" src={workwithUs}></img> </p>
                     </div>
                 </div>
                 
@@ -33,7 +33,7 @@ const Features2 = () => {
                 	<div className="affa-feature-text">
                     	<span className="feature-text-number"></span>
                         <h4>Negotiation and Pricing</h4>
-                        <p>We offer a wide range of products and designs, if you want 1-of-1 completley custom work we can offer that at a competitve rate. If your needs require larger quantities we can also provide wholesale manufactruing so you can get everything you need</p>
+                        <p>We offer a wide range of products and designs. We offer 1-of-1 custom work at a competitive rate. If your needs require larger quantities, we can also provide wholesale manufacturing to get everything you need. </p>
                     </div>
                 </div>
                 

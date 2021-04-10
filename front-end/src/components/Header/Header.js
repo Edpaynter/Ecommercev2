@@ -79,7 +79,7 @@ const Header = () => {
                     data-show-transition="down"
                     data-show-delay="600"
                   >
-                    <span> Quailty Video Production</span>
+                    <span> Quality Video Production</span>
                   </h1>
                   <div
                     className="sp-layer sp-layer-4"

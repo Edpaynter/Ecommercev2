@@ -1,6 +1,8 @@
 import React from "react";
+import useStyles from "./styles";
 
 const Footer = () => {
+  const classes = useStyles();
   return (
     <div>
       <footer id="footer">
@@ -12,10 +14,10 @@ const Footer = () => {
                
               </p>
               <div className="footer-socials">
-                <a href={"/"} title="facebook">
+                <a  href={"https://www.facebook.com/Allsidesdesigns-101210328318456/"} title="facebook" target="_blank">
                   <i className="fa fa-facebook"></i>
                 </a>
-                <a href={"/"} title="instagram">
+                <a href={"https://www.instagram.com/allsidesdesigns/"} title="instagram" target="_blank">
                   <i className="fa fa-instagram"></i>
                 </a>
                
@@ -71,7 +73,7 @@ const Footer = () => {
           <div className="container">
             <p>
               &copy; 2020 Copyrights by
-              <a href="https://allsidesdesigns.co/" rel="noreferrer" target="_blank">
+              <a href="https://allsidesdesigns.co/" rel="noreferrer" target="_blank" className={classes.companyHighlight}>
                 AllSides Designs, LLC
               </a>
               - All rights reserved.

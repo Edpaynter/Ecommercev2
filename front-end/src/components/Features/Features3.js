@@ -1,7 +1,6 @@
 import React from "react";
 
 const Feature3 = () => {
-  
   return (
     <div>
       <div id="features4" className="padding-bottom40">
@@ -16,7 +15,6 @@ const Feature3 = () => {
                 <p>
                   Some of the main services that we offer.
                 </p>
-               
               </div>
             </div>
 

@@ -11,8 +11,8 @@ const Quote = () => {
             <div className="container">
                 
                 <div className="affa-quote">
-                	<h4>Work smart, deliver quality products, and put the customer first. That's what it's all about</h4>
-                    <p>- our CIO<br/>Ed Paynter</p>
+                	<h4>Work smart, deliver quality products, and put the customer first. That's what it's all about. </h4>
+                    <p>- our CTO<br/>Ed Paynter</p>
                 </div>
                 
             </div>

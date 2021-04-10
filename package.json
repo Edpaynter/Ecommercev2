@@ -1,5 +1,5 @@
 {
-  "name": "mern-demo",
+  "name": "project-gemini",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -20,7 +20,8 @@
     "mongoose": "^5.11.12",
     "nodemailer": "^6.4.17",
     "path": "^0.12.7",
-    "xoauth2": "^1.2.0"
+    "xoauth2": "^1.2.0",
+    "nexmo": "^2.0.2"
   },
   "proxy": "http://localhost:8080"
 }
