@@ -13,6 +13,8 @@ import Quote from "./components/Quote/Quote";
 // import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import StoreFront from './components/StoreFront/StoreFront'
+import { Iframe } from "./components";
 // import AppointmentScheduler from "./components/AppointmentScheduler/AppointmentScheduler"
 // import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
@@ -40,11 +42,14 @@ function App() {
           {/* <ProductCounter /> */}
           {/* <TeamTiles /> */}
           {/* <Partners /> */}
+         
           <Footer />
+          
          
         </Route>
       </Switch>
     </Router>
+    // <StoreFront />
   );
 }
 

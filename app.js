@@ -17,6 +17,7 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE");
   // Allow client to set headers with Content-Type
+  res.setHeader("'X-Authorization", process.env.STRIPE_API_TOKEN )
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   next();
 });
