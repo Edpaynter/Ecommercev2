@@ -26,6 +26,11 @@ const NavBar = () => {
           What We Do
         </a>
       </li>
+      <li>
+        <a href="https://allsidesstudios.com/" target="_blank" className="smooth-scroll">
+         Shop Our Store
+        </a>
+      </li>
       {/* <li>
         <a href="#whyus" className="smooth-scroll">
           Why Us?

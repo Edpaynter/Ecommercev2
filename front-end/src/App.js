@@ -6,15 +6,9 @@ import Features from "./components/Features/Features";
 import Features2 from "./components/Features/Features2";
 import Features3 from "./components/Features/Features3";
 import Quote from "./components/Quote/Quote";
-// import Video from "./components/Video/Video";
-// import StorePreview from "./components/StorePreview/StorePreview";
-// import ProductCounter from "./components/ProductCounter/ProductCounter";
-// import TeamTiles from "./components/TeamTiles/TeamTiles";
-// import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
-// import AppointmentScheduler from "./components/AppointmentScheduler/AppointmentScheduler"
-// import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+
 
 function App() {
   return (
@@ -27,19 +21,12 @@ function App() {
         </Route>
         <Route path="/">
           <Header />
-          {/* <MuiThemeProvider>
-          <AppointmentScheduler />
-          </MuiThemeProvider> */}
           <About />
           <Features />
           <Quote />
           <Features2 />
           <Features3 />
-          {/* <Video /> */}
-          {/* <StorePreview /> */}
-          {/* <ProductCounter /> */}
-          {/* <TeamTiles /> */}
-          {/* <Partners /> */}
+
           <Footer />
          
         </Route>
