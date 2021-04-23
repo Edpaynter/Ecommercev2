@@ -104,20 +104,24 @@ const Header = () => {
             />
             <div className="header-overlay header-overlay60">
               <div className="container">
-                <div className="header-text-right">
+                <div className="header-text-center">
+                  <h1
+                    style={{fontSize: '20rem' }}
+                    className="sp-layer sp-layer-1"
+                    data-show-transition="right"
+                    data-show-delay="200"
+                  >
+                    <a href="https://www.patreon.com/allsidesdesigns">
+                    <span><i class="fab fa-patreon"></i></span>
+                    </a>
+                   
+                  </h1>
                   <h1
                     className="sp-layer sp-layer-1"
                     data-show-transition="left"
                     data-show-delay="200"
                   >
-                    Season 01
-                  </h1>
-                  <h1
-                    className="sp-layer sp-layer-1"
-                    data-show-transition="right"
-                    data-show-delay="200"
-                  >
-                    <span>Coming Soon...</span>
+                    Check us Out on Patreon 
                   </h1>
                 </div>
               </div>

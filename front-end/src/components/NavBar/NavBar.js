@@ -83,6 +83,11 @@ const NavBar = () => {
           <span style={{ color: "" }}>Store</span>
         </a>
       </li> */}
+      <li>
+        <a href="https://allsidesstudios.com/" target="_blank" className="smooth-scroll">
+         Shop Our Store
+        </a>
+      </li>
       <li className="menu-btn">
         <Link to="/contact#contactform"> Contact </Link>
       </li>
