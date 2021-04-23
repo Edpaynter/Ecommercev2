@@ -20,7 +20,9 @@ const Footer = () => {
                 <a href={"https://www.instagram.com/allsidesdesigns/"} title="instagram" target="_blank">
                   <i className="fab fa-instagram"></i>
                 </a>
-               
+                <a href={"https://www.patreon.com/allsidesdesigns"} title="patreon" target="_blank">
+                <i className="fab fa-patreon"></i>
+                </a>
               </div>
             </div>
 
