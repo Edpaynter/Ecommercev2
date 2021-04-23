@@ -15,10 +15,10 @@ const Footer = () => {
               </p>
               <div className="footer-socials">
                 <a  href={"https://www.facebook.com/Allsidesdesigns-101210328318456/"} title="facebook" target="_blank">
-                  <i className="fa fa-facebook"></i>
+                  <i className="fab fa-facebook-square"></i>
                 </a>
                 <a href={"https://www.instagram.com/allsidesdesigns/"} title="instagram" target="_blank">
-                  <i className="fa fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                
               </div>
