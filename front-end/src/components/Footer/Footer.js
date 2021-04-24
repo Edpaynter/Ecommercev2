@@ -40,6 +40,9 @@ const Footer = () => {
                     <li>
                       <a href={"/contact#contactform"}>Contact Us</a>
                     </li>
+                    <li>
+                      <a href={"https://allsidesstudios.com/"}>Shop Our Store</a>
+                    </li>
                   </ul>
                 </div>
                 {/* <div className="col-sm-6">
