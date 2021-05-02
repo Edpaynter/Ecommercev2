@@ -2,111 +2,68 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  let navData = null;
-  
-  const homePage = (
-    <ul className="nav navbar-nav">
-      <li>
-        <a href="#header" className="smooth-scroll">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#about" className="smooth-scroll">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#features" className="smooth-scroll">
-          Working With Us
-        </a>
-      </li>
-      <li>
-        <a href="#features4" className="smooth-scroll">
-          What We Do
-        </a>
-      </li>
-      <li>
-        <a href="https://allsidesstudios.com/" target="_blank" className="smooth-scroll">
-         Shop Our Store
-        </a>
-      </li>
-      {/* <li>
-        <a href="#whyus" className="smooth-scroll">
-          Why Us?
-        </a>
-      </li> */}
-      {/* <li>
-        <a href="page.html">
-          <span style={{ color: "" }}>Store</span>
-        </a>
-      </li> */}
-      <li className="menu-btn">
-        <Link to="/contact#contactform"> Contact </Link>
-      </li>
-    </ul>
-  );
-  const contactPage = (
-    <ul className="nav navbar-nav">
-      <li>
-        <a href="/#header" className="smooth-scroll">
-          
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="/#about" className="smooth-scroll">
-          
-          About
-        </a>
-      </li>
-      <li>
-        <a href="/#features" className="smooth-scroll">
-          
-          Working With Us
-        </a>
-      </li>
-      <li>
-        <a href="/#features4" className="smooth-scroll">
-          What We Do
-        </a>
-      </li>
-      {/* <li>
-        <a href="/#whyus" className="smooth-scroll">
-          
-          Why Us?
-        </a>
-      </li> */}
-      {/* <li>
-        <a href="page.html">
-          
-          <span style={{ color: "" }}>Store</span>
-        </a>
-      </li> */}
-      <li>
-        <a href="https://allsidesstudios.com/" target="_blank" className="smooth-scroll">
-         Shop Our Store
-        </a>
-      </li>
-      <li className="menu-btn">
-        <Link to="/contact#contactform"> Contact </Link>
-      </li>
-    </ul>
+  let affixNav = null;
+  let position = null;
+  let contactCheck = "";
+  let homeLink = null;
+  let contactLink = (
+    <li className="menu-btn">
+      <Link to="/contact#contactform"> Contact </Link>
+    </li>
   );
   if (window.location.pathname === "/contact") {
-    navData = contactPage;
-  } else {
-    navData = homePage;
+    contactCheck = "/";
+    affixNav = "affix";
+    position = { position: "relative" };
+    homeLink = (
+      <li>
+        <a href={`${contactCheck}`} className="smooth-scroll">
+          Home
+        </a>
+      </li>
+    );
+    contactLink = null;
   }
   return (
-    <nav id="navigation" className="navbar scrollspy">
+    <nav
+      id="navigation"
+      className={`navbar scrollspy ${affixNav}`}
+      style={position}
+    >
       <div className="container">
         <div className="navbar-brand">
           <a href={"/"}>
             <img style={{ height: "8rem" }} src="./greyicon.png" alt="Logo" />
           </a>
         </div>
-        {navData}
+        <ul className="nav navbar-nav">
+          {homeLink}
+          <li>
+            <a href={`${contactCheck}#about`} className="smooth-scroll">
+              About
+            </a>
+          </li>
+          <li>
+            <a href={`${contactCheck}#features`} className="smooth-scroll">
+              Working With Us
+            </a>
+          </li>
+          <li>
+            <a href={`${contactCheck}#features4`} className="smooth-scroll">
+              What We Do
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://allsidesstudios.com/"
+              target="_blank"
+              className="smooth-scroll"
+            >
+              Shop Our Store
+            </a>
+          </li>
+          {contactLink}
+        </ul>
       </div>
     </nav>
   );
