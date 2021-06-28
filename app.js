@@ -9,13 +9,10 @@ const appointmentSchedulerRoutes = require('./routes/appointmentSchedulerRoutes'
 const app = express();
 app.use(express.json());
 
-// Serve public folder (front-end build folder)
-// app.use(express.static(path.join("public")));
-
 // Set CORS header
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE");
   // Allow client to set headers with Content-Type
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   next();
@@ -23,7 +20,7 @@ app.use((req, res, next) => {
 
 // Register Route
 app.use(contactFormRoutes);
-app.use(appointmentSchedulerRoutes);
+
 
 // Error Handler
 app.use((error, req, res, next) => {
@@ -33,29 +30,15 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
-// DB connection
-mongoose
-  .connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
+const port = process.env.PORT || 8080;
+app.use(express.static(path.join(__dirname, 'front-end/build')))
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'front-end/build/index.html'), function (err) {
+    if (err) {
+      res.status(500).send(err)
+    }
   })
-  .then((result) => {
-    const port = process.env.PORT || 8080;
-    app.use(express.static(path.join(__dirname, 'front-end/build')))
-    app.get('/*', function(req, res) {
-      res.sendFile(path.join(__dirname, 'front-end/build/index.html'), function(err) {
-        if (err) {
-          res.status(500).send(err)
-        }
-      })
-    })
-    app.listen(port, () => {
-      console.log(`Listening on port ${port}...`);
-    });
-  })
-  .catch((err) => {
-    // Handle error
-    console.log(err);
-  });
-  
+})
+app.listen(port, () => {
+  console.log(`Listening on port ${port}...`);
+});
