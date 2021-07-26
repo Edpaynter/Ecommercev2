@@ -79,7 +79,7 @@ const Home = () => {
                 <span></span>
                 <span></span>
               </a>
-              <a href="javascript:void(0)" class="agency-num">
+              <a href="tel:215-558-7000" class="agency-num">
                 <span>
                   <i class="lni lni-whatsapp"></i>
                 </span>{" "}
@@ -110,12 +110,12 @@ const Home = () => {
                 </li>
                 <li class="nav-item">
                   <a class="nav-link scroll" href="#our-testimonial">
-                    <span>04.</span> Clients
+                    <span>03.</span> Clients
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link scroll" href="#contact-sec">
-                    <span>05.</span> Contact
+                    <span>04.</span> Contact
                   </a>
                 </li>
               </ul>
@@ -124,18 +124,35 @@ const Home = () => {
             <div class="side-footer w-100">
               <ul class="social-icons-simple">
                 <li>
-                  <a class="facebook-text-hvr" href="javascript:void(0)">
+                  <a
+                    class="facebook-text-hvr"
+                    href="https://www.facebook.com/MarvinCappsRealty/"
+                  >
                     <i class="fab fa-facebook-f"></i>{" "}
                   </a>{" "}
                 </li>
                 <li>
-                  <a class="instagram-text-hvr" href="javascript:void(0)">
+                  <a
+                    class="instagram-text-hvr"
+                    href="https://www.instagram.com/marvincappsrealty/"
+                  >
                     <i class="fab fa-instagram"></i>{" "}
                   </a>{" "}
                 </li>
                 <li>
-                  <a class="twitter-text-hvr" href="javascript:void(0)">
+                  <a
+                    class="twitter-text-hvr"
+                    href="https://twitter.com/MarvinCappsINC"
+                  >
                     <i class="fab fa-twitter"></i>{" "}
+                  </a>{" "}
+                </li>
+                <li>
+                  <a
+                    class="linkedin-text-hvr"
+                    href="https://www.linkedin.com/in/marvin-capps-08b90438"
+                  >
+                    <i class="fab fa-linkedin"></i>{" "}
                   </a>{" "}
                 </li>
               </ul>
@@ -171,7 +188,7 @@ const Home = () => {
             <li class="animated-wrap">
               <a
                 class="animated-element facebook_bg_hvr2"
-                href="javascript:void(0);"
+                href="https://www.facebook.com/MarvinCappsRealty/"
               >
                 <i class="fab fa-facebook-f"></i>{" "}
               </a>
@@ -179,7 +196,7 @@ const Home = () => {
             <li class="animated-wrap">
               <a
                 class="animated-element twitter_bg_hvr2"
-                href="javascript:void(0);"
+                href="https://twitter.com/MarvinCappsINC"
               >
                 <i class="fab fa-twitter"></i>{" "}
               </a>
@@ -187,7 +204,7 @@ const Home = () => {
             <li class="animated-wrap">
               <a
                 class="animated-element linkdin_bg_hvr2"
-                href="javascript:void(0);"
+                href="https://www.linkedin.com/in/marvin-capps-08b90438"
               >
                 <i class="fab fa-linkedin-in"></i>{" "}
               </a>
@@ -195,7 +212,7 @@ const Home = () => {
             <li class="animated-wrap">
               <a
                 class="animated-element instagram_bg_hvr2"
-                href="javascript:void(0);"
+                href="https://www.instagram.com/marvincappsrealty"
               >
                 <i class="fab fa-instagram"></i>{" "}
               </a>
@@ -367,7 +384,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="item project-area">
+          {/* <div class="item project-area">
             <div class="project-img order-1">
               <img src="assets/img/salebg.jpg" alt="images" />
             </div>
@@ -399,16 +416,14 @@ const Home = () => {
                           Carpentry, Masonry, Roofing, Heating Ventilation and
                           Air Conditioning Contractors.
                         </p>
-                        {/* <button class="btn secondary-btn rounded-pill">
-                          LAUNCH DETAILS
-                        </button> */}
+                        
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div class="item project-area">
             <div class="project-img order-1">
@@ -580,16 +595,21 @@ const Home = () => {
                 <ul>
                   <li>
                     <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
-                    1800 JFK Blvd Suite 300 Philadelphia, PA, United States{" "}
+                    <a href="https://bit.ly/3iRGyUH">
+                      1800 JFK Blvd Suite 300 Philadelphia, PA, United States{" "}
+                    </a>
                   </li>
                   <li>
                     <i aria-hidden="true" class="fas fa-phone-volume"></i>
-                    <span>+1 215-558-7000</span>
-                    {/* <span>+1 631 1234 5678</span> */}
+                    <a href="tel:215-558-7000">
+                      <span>+1 215-558-7000</span>
+                    </a>
                   </li>
                   <li>
                     <i aria-hidden="true" class="fas fa-paper-plane"></i>
-                    marvin.capps@yahoo.com
+                    <a href="mailto: marvin.capps@yahoo.com">
+                      marvin.capps@yahoo.com
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -609,27 +629,34 @@ const Home = () => {
               <div class="footer-social text-center text-lg-left ">
                 <ul class="list-unstyled">
                   <li>
-                    <a class="wow fadeInUp" href="javascript:void(0);">
+                    <a
+                      class="wow fadeInUp"
+                      href="https://www.facebook.com/MarvinCappsRealty/"
+                    >
                       <i aria-hidden="true" class="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="wow fadeInDown" href="javascript:void(0);">
+                    <a
+                      class="wow fadeInDown"
+                      href="https://twitter.com/MarvinCappsINC"
+                    >
                       <i aria-hidden="true" class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="wow fadeInUp" href="javascript:void(0);">
-                      <i aria-hidden="true" class="fab fa-google-plus-g"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="wow fadeInDown" href="javascript:void(0);">
+                    <a
+                      class="wow fadeInDown"
+                      href="https://www.linkedin.com/in/marvin-capps-08b90438"
+                    >
                       <i aria-hidden="true" class="fab fa-linkedin-in"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="wow fadeInUp" href="javascript:void(0);">
+                    <a
+                      class="wow fadeInUp"
+                      href="https://www.instagram.com/marvincappsrealty/"
+                    >
                       <i aria-hidden="true" class="fab fa-instagram"></i>
                     </a>
                   </li>

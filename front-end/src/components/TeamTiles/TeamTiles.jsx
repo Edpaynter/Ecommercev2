@@ -42,7 +42,7 @@ const TeamTiles = () => {
       photo: "assets/img/company/danamcguinness.png",
     },
     {
-      name: "Joanna Daye",
+      name: "Johanna Daye",
       position: "Agent",
       email: 'jwdaye@gmail.com',
       phone: "610.909.8245",
@@ -115,20 +115,20 @@ const TeamTiles = () => {
       phone: "267.259.6915",
       photo: "assets/img/company/irisfelder.jpg",
     },
-    {
-      name: "Jadeane Daye",
-      position: "Agent",
-      phone: "267.716.8506",
-      email: "exitwfgjd@gmail.com",
-      photo: "assets/img/logo-white.png",
-      states: ["PA"],
-    },
+    // {
+    //   name: "Jadeane Daye",
+    //   position: "Agent",
+    //   phone: "267.716.8506",
+    //   email: "exitwfgjd@gmail.com",
+    //   photo: "assets/img/logo-white.png",
+    //   states: ["PA"],
+    // },
     {
       name: "Candice Wattley",
       position: "Agent",
       phone: "215.837.0882",
       email: "candiw4@verizon.net",
-      photo: "assets/img/logo-orange.png",
+      photo: "assets/img/company/c_wattley.png",
       states: ["PA"],
     },
 
