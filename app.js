@@ -30,24 +30,29 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
-const port = process.env.PORT || 8080;
-app.use(express.static(path.join(__dirname, 'front-end/build')))
-app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'front-end/build/index.html'), function (err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
 
+// DB connection
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify: false,
   })
-  .then(
+  .then((result) => {
+    const port = process.env.PORT || 8080;
+    app.use(express.static(path.join(__dirname, 'front-end/build')))
+    app.get('/*', function(req, res) {
+      res.sendFile(path.join(__dirname, 'front-end/build/index.html'), function(err) {
+        if (err) {
+          res.status(500).send(err)
+        }
+      })
+    })
     app.listen(port, () => {
       console.log(`Listening on port ${port}...`);
-    })
-  )
-  .catch((error) => console.log(error));
+    });
+  })
+  .catch((err) => {
+    // Handle error
+    console.log(err);
+  });
