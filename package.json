@@ -22,5 +22,6 @@
     "path": "^0.12.7",
     "xoauth2": "^1.2.0",
     "nexmo": "^2.0.2"
-  }
+  },
+  "proxy" : "http://localhost:8080"
 }
