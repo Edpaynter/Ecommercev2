@@ -16,7 +16,6 @@ exports.create_a_form = (req, res) => {
   new_form.save((err, form) => {
     if (err) res.send(err);
     res.json(form);
-    // console.log(form);
     transporter.sendMail({
       from: `${form.email} AllSides Email Delivery Service`, // sender address
       to: `${process.env.COMPANY_EMAIL}`, // list of receivers
@@ -66,7 +65,7 @@ exports.create_a_form = (req, res) => {
           </div>
       </body>
       </html>`,
-      // html: `<h3>Contact Email: ${form.email}</h3><br><h4>Name:${form.name}<h4>Message:</h4>${form.message}`, // html body
+      
     });
   });
 };

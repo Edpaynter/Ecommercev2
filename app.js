@@ -39,6 +39,15 @@ app.get('/*', function (req, res) {
     }
   })
 })
-app.listen(port, () => {
-  console.log(`Listening on port ${port}...`);
-});
+
+mongoose
+  .connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(
+    app.listen(port, () => {
+      console.log(`Listening on port ${port}...`);
+    })
+  )
+  .catch((error) => console.log(error));
