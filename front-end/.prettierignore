@@ -1,0 +1,4 @@
+#Igore Artifacts
+build
+coverage
+public

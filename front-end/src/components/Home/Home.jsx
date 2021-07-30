@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../ContactForm/ContactForm";
 import TeamTiles from "../TeamTiles/TeamTiles";
 
 const Home = () => {
@@ -539,58 +540,13 @@ const Home = () => {
       <section class="contact-sec" id="contact-sec">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-7 wow fadeInLeft">
-              <h4 class="heading text-center text-lg-left">GET IN TOUCH</h4>
-              <form class="row contact-form" id="contact-form-data">
-                <div class="col-sm-12" id="result"></div>
-                <div class="col-12 col-md-5">
-                  <input
-                    type="text"
-                    name="userName"
-                    placeholder="Your Name"
-                    class="form-control"
-                  />
-                  <input
-                    type="email"
-                    name="userEmail"
-                    placeholder="Email Address *"
-                    class="form-control"
-                  />
-                  <input
-                    type="text"
-                    name="userSubject"
-                    placeholder="Subject"
-                    class="form-control"
-                  />
-                </div>
-                <div class="col-12 col-md-7">
-                  <textarea
-                    class="form-control"
-                    name="userMessage"
-                    rows="6"
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <a
-                    href="javascript:void(0);"
-                    class="btn standard-btn rounded-pill w-100 contact_btn"
-                  >
-                    <i
-                      class="fa fa-spinner fa-spin mr-2 d-none"
-                      aria-hidden="true"
-                    ></i>
-                    Send Message
-                  </a>
-                </div>
-              </form>
-            </div>
+            <ContactForm />
             <div class="col-12 col-lg-5 text-center text-lg-left position-relative">
               <div class="contact-details wow fadeInRight">
                 <h4 class="heading">OUR LOCATION</h4>
                 <p class="text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered .
+                  There are many ways to get in contact with us. We are here to
+                  help you through the entire process.
                 </p>
                 <ul>
                   <li>
