@@ -29,33 +29,24 @@ exports.create_a_form = (req, res) => {
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
-          <link rel="preconnect" href="https://fonts.gstatic.com">
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
       </head>
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-  
+     
       <body>
-          <div style="background-color: red;
-          color: white;
-          text-align: center;
-          letter-spacing: 5px;
-          text-transform: uppercase;">Do Not Reply to this Email</div>
-          <div>
-              <img>
-          </div>
+          
           <div>AllSides Email Delivery Service</div>
           <hr style="background-color: black;
           height: 2px;
           font-family: 'Roboto', sans-serif;
           ">
-          <div> From:<span> ${form.email} </span></div>
+          
           <div>
-          Name: ${form.name}
+            Name: ${form.name}
           </div>
           <div>
               Message:  ${form.message}
           </div>
+          <br>
+          <div> Email:<span> ${form.email} </span></div>
           <hr>
           <div>
               <small style="font-size: 10px;">
@@ -64,7 +55,14 @@ exports.create_a_form = (req, res) => {
               </small>
           </div>
       </body>
-      </html>`,
+
+      <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+         * { font-family: 'Roboto',
+          sans-serif; }
+        </style>
+      </html>
+      `,
       
     });
   });
