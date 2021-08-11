@@ -3,9 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const { MONGODB_URI } = require("./config");
-const userRoutes = require("./routes/user");
 const contactFormRoutes = require("./routes/contactFormRoutes");
-const appointmentSchedulerRoutes = require('./routes/appointmentSchedulerRoutes');
+
 const app = express();
 app.use(express.json());
 
@@ -23,7 +22,6 @@ app.use((req, res, next) => {
 
 // Register Route
 app.use(contactFormRoutes);
-app.use(appointmentSchedulerRoutes);
 
 // Error Handler
 app.use((error, req, res, next) => {
