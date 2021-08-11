@@ -563,8 +563,8 @@ const Home = () => {
                   </li>
                   <li>
                     <i aria-hidden="true" class="fas fa-paper-plane"></i>
-                    <a href="mailto: marvin.capps@yahoo.com">
-                      marvin.capps@yahoo.com
+                    <a href="mailto: marvincappsrealty@gmail.com">
+                      marvincappsrealty@gmail.com
                     </a>
                   </li>
                 </ul>
