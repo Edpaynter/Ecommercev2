@@ -36,7 +36,7 @@ jQuery(function ($) {
 
   //Click event to scroll to top
   $(document).on("click", ".scroll-top-arrow", function () {
-    $("html, body").animate({ scrollTop: 0 }, 800);
+    $("html, body").animate({ scrollTop: 0 }, 100);
     return false;
   });
 
@@ -46,7 +46,7 @@ jQuery(function ($) {
       {
         scrollTop: $(this.hash).offset().top - 60,
       },
-      1200
+      100
     );
   });
 
@@ -94,7 +94,8 @@ jQuery(function ($) {
   //TEAM
   $(".testimonial-team").owlCarousel({
     loop: true,
-    autoplay: false,
+    autoplay:true,
+    autoplayTimeout: 3050, 
     margin: 0,
     nav: false,
     center: true,
