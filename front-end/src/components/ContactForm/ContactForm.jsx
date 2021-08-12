@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,13 +9,11 @@ function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setSetMessage] = useState("");
-
   const [open, setOpen] = useState(false);
 
   const handleClose = (event, reason) => {
@@ -27,26 +25,31 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: name,
-        subject: subject,
-        email: email,
-        message: message,
-      }),
-    };
+    
+    if ((name === "" || subject === "" || email === "", message === "")) {
+      return;
+    } else {
+      const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          subject: subject,
+          email: email,
+          message: message,
+        }),
+      };
 
-    fetch(`/contactform`, requestOptions)
-      .then((response) => response.json())
-      .then((data) => setOpen(true))
-      .then(
-        (data) => setName(""),
-        setSubject(""),
-        setEmail(""),
-        setSetMessage("")
-      );
+      fetch(`/contactform`, requestOptions)
+        .then((response) => response.json())
+        .then((data) => setOpen(true))
+        .then(
+          (data) => setName(""),
+          setSubject(""),
+          setEmail(""),
+          setSetMessage("")
+        );
+    }
   };
 
   return (
@@ -60,6 +63,7 @@ const ContactForm = () => {
         <div class="col-sm-12" id="result"></div>
         <div class="col-12 col-md-5">
           <input
+            required
             type="text"
             name="userName"
             placeholder="Your Name"
@@ -77,6 +81,7 @@ const ContactForm = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
+            required
             type="text"
             name="userSubject"
             placeholder="Subject"
@@ -89,6 +94,7 @@ const ContactForm = () => {
         </div>
         <div class="col-12 col-md-7">
           <textarea
+            required
             class="form-control"
             name="userMessage"
             rows="6"

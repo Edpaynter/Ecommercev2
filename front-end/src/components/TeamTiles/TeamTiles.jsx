@@ -19,7 +19,7 @@ const TeamTiles = () => {
       photo: "assets/img/company/yasmeenlockettheadshot.jpg",
     },
     {
-      name: "Julia Jackson",
+      name: "Juluia Jackson",
       position: "Agent",
       email: "jjuluia@gmail.com",
       phone: "215.869.8555",
@@ -40,13 +40,15 @@ const TeamTiles = () => {
       email: "dana.mcguinness@gmail.com",
       phone: "570.401.8080",
       photo: "assets/img/company/danamcguinness.png",
+      states: ["PA"],
     },
     {
-      name: "Johanna Daye",
+      name: "Jadeane Daye",
       position: "Agent",
       email: "jwdaye@gmail.com",
       phone: "610.909.8245",
-      photo: "assets/img/company/joannadaye.jpeg",
+      photo: "assets/img/company/j_daye.png",
+      states: ["PA"],
     },
     {
       name: "Eric Murchison",
@@ -54,6 +56,7 @@ const TeamTiles = () => {
       email: "ericmurchison@icloud.com",
       phone: "215.416.7457",
       photo: "assets/img/company/ericmurchison.jpg",
+      states: ["PA"],
     },
     {
       name: "Dorothy Gibbons",
@@ -61,6 +64,7 @@ const TeamTiles = () => {
       email: "malana64@gmail.com",
       phone: "215.961.7130",
       photo: "assets/img/company/dorothygibbons.jpg",
+      states: ["PA"],
     },
     {
       name: "Jakai Bishop",
@@ -68,6 +72,7 @@ const TeamTiles = () => {
       email: "jakai01@gmail.com",
       phone: "215.768.7995",
       photo: "assets/img/company/jakaibishop.png",
+      states: ["PA"],
     },
     {
       name: "Douglas J Nesmith",
@@ -75,6 +80,7 @@ const TeamTiles = () => {
       email: "dn210@msn.com",
       phone: "267.716.5358",
       photo: "assets/img/company/douglasnesmith.png",
+      states: ["PA"],
     },
     {
       name: "Angel Freeburn",
@@ -113,22 +119,23 @@ const TeamTiles = () => {
       position: "Agent",
       email: "iris.felder@gmail.com",
       phone: "267.259.6915",
-      photo: "assets/img/company/irisfelder.jpg",
+      photo: "assets/img/company/irisfelder.png",
+      states: ["PA"],
     },
-    // {
-    //   name: "Jadeane Daye",
-    //   position: "Agent",
-    //   phone: "267.716.8506",
-    //   email: "exitwfgjd@gmail.com",
-    //   photo: "assets/img/logo-white.png",
-    //   states: ["PA"],
-    // },
+    {
+      name: "Kimyotta Hampton",
+      position: "Agent",
+      phone: "610.703.5525",
+      email: "khampton826@gmail.com",
+      photo: "assets/img/company/kimyottahampton.png",
+      states: ["PA"],
+    },
     {
       name: "Candice Wattley",
       position: "Agent",
       phone: "215.837.0882",
       email: "candiw4@verizon.net",
-      photo: "assets/img/company/c_wattley.png",
+      photo: "assets/img/logo-white.png",
       states: ["PA"],
     },
   ];
